@@ -24,3 +24,14 @@ welcome.addEventListener("mouseenter", () => {
         fontSize: 50
     })
 })
+
+//Event 3
+const main1 = document.querySelector(".text-content");
+
+main1.addEventListener("dblclick", () => {
+    gsap.to(".text-content", {
+        duration: 1,
+        delay: 1,
+        backgroundColor: "violet",
+    })
+})
