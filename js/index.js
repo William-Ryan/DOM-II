@@ -88,9 +88,21 @@ const letsGo = document.querySelector(".text-content h2");
 
 letsGo.addEventListener("click", () => {
     gsap.to(".text-content h2", {
-        delay: 2,
         fontWeight: "bold",
         fontSize: 50,
         color: "red"
+    })
+})
+
+//Event 9
+const mainImgs = document.querySelector(".img-content");
+
+mainImgs.addEventListener("mouseenter", () => {
+    gsap.to(".img-content", {
+        duration: 2,
+        width: 10,
+        rotate: 180,
+        yoyo: true,
+        repeat: 1
     })
 })
