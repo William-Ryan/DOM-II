@@ -45,10 +45,18 @@ adventure.addEventListener("dblclick", (e) => {
         color: "orange",
         x: -100,
         yoyo: true,
-        ease: "bounce",
+        ease: "elastic",
         repeat: 1
     })
 })
 
 //Event 5
 const bus = document.querySelector(".intro img");
+
+bus.addEventListener("wheel", () => {
+    gsap.to(".intro img", {
+        duration: 2,
+        x: 550,
+        ease: "bounce"
+    })
+})
