@@ -31,7 +31,24 @@ const main1 = document.querySelector(".text-content");
 main1.addEventListener("dblclick", () => {
     gsap.to(".text-content", {
         duration: 1,
-        delay: 1,
         backgroundColor: "violet",
     })
 })
+
+//Event 4
+
+const adventure = document.querySelector(".text-content p");
+
+adventure.addEventListener("dblclick", (e) => {
+    e.stopPropagation();
+    gsap.to(".text-content p", {
+        color: "orange",
+        x: -100,
+        yoyo: true,
+        ease: "bounce",
+        repeat: 1
+    })
+})
+
+//Event 5
+const bus = document.querySelector(".intro img");
