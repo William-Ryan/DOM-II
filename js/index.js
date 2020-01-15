@@ -60,3 +60,12 @@ bus.addEventListener("wheel", () => {
         ease: "bounce"
     })
 })
+
+//Event 6
+const boat = document.querySelector(".content-destination img");
+
+boat.addEventListener("mouseleave", () => {
+    gsap.to(".content-destination img", {
+        display: "none"
+    })
+})
