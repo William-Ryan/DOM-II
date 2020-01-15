@@ -106,3 +106,17 @@ mainImgs.addEventListener("mouseenter", () => {
         repeat: 1
     })
 })
+
+//Event 10
+const stopLink = document.querySelector(".nav-link");
+
+stopLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    gsap.to(".nav-link", {
+        duration: 0.5,
+        ease: "elastic",
+        x: 10,
+        yoyo: true,
+        repeat: 1
+    })
+})
