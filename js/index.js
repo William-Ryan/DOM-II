@@ -82,3 +82,15 @@ buttons.addEventListener("click", () => {
         stagger: 0.25,
     })
 })
+
+//Event 8
+const letsGo = document.querySelector(".text-content h2");
+
+letsGo.addEventListener("click", () => {
+    gsap.to(".text-content h2", {
+        delay: 2,
+        fontWeight: "bold",
+        fontSize: 50,
+        color: "red"
+    })
+})
