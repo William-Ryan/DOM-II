@@ -69,3 +69,16 @@ boat.addEventListener("mouseleave", () => {
         display: "none"
     })
 })
+
+//Event 7
+const buttons = document.querySelector(".btn")
+
+buttons.addEventListener("click", () => {
+    gsap.to(".btn", {
+        duration: 2,
+        color: "black",
+        backgroundColor: "yellow",
+        rotate: 90,
+        stagger: 0.25,
+    })
+})
